@@ -20,6 +20,7 @@ One of the first steps when starting any data science project is to create a vir
 At the end, you want to make sure that people who are interested in your project can create an identical environment on their own computer in order to be able to run your code without running into errors. Therefore you can create a `requirements file` and add it to your repository. You can create such a file by running the following command: 
 
 ```bash
+#don't run
 pip freeze > requirements.txt
 ```
 
@@ -42,6 +43,9 @@ This repo contains a requirements.txt file with a list of all the packages and d
 
 ```bash
 brew update
+#if warning: No available formula with the name "homebrew/core/postgresql".
+##brew upgrade
+##brew tap homebrew/core
 brew install postgresql
 ```
 
@@ -54,3 +58,4 @@ source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
+Run the echo .... .env for teh database connection details
